@@ -1,0 +1,94 @@
+import { Meta, Unstyled } from '@storybook/blocks';
+import { Heading } from '../Heading';
+import { Body } from '../Body';
+import { Animate } from '../Animate';
+import { Icon } from '../Icon';
+import { StreamingText } from '../StreamingText';
+
+import logo from '../../assets/logo.svg';
+
+<Meta title="Strata/Introduction" />
+
+<Unstyled>
+
+<div className="mx-auto max-w-2xl text-center">
+  <Animate variant="fadeUp" duration={1}>
+    <img src={logo} alt="Strata" className="mx-auto mb-6 w-80" />
+    <Body as="div" variant="lg" className="mb-10 text-soil min-h-[4.5rem]">
+      <StreamingText speed={25}>A React component library with Tailwind CSS, designed with warmth and intention.</StreamingText>
+    </Body>
+    <div className="flex flex-wrap justify-center gap-4">
+      <a
+        href="/?path=/docs/components-button--docs"
+        target="_top"
+        className="inline-flex h-9 items-center justify-center gap-2 rounded border-2 border-clay bg-clay px-6 py-4 text-sm font-bold text-cream no-underline transition-all hover:ring-2 hover:ring-clay hover:ring-offset-2"
+      >
+        <Icon icon="view_list" size="sm" />
+        Browse Components
+      </a>
+      <a
+        href="/?path=/docs/strata-style-guide--docs"
+        className="inline-flex h-9 items-center justify-center gap-2 rounded border-2 border-clay bg-transparent px-6 py-4 text-sm font-semibold text-terracotta no-underline transition-all hover:ring-2 hover:ring-clay hover:ring-offset-2"
+      >
+        <Icon icon="palette" size="sm" />
+        Style Guide
+      </a>
+    </div>
+  </Animate>
+</div>
+
+<Heading level={2} size={4} className="mt-16 mb-6 border-b border-almond">
+  What's included
+</Heading>
+
+<div className="grid gap-8 sm:grid-cols-2">
+  <Animate variant="scaleUp" delay={.2}>
+    <div className="rounded-lg border border-almond bg-cream/50 p-6">
+      <Heading level={3} size={5} className="mb-3">
+        Components
+      </Heading>
+      <Body as="div" variant="sm">
+        Button, Heading, Body, Spinner, Animate, Icon, and StreamingText. Each built with variants, accessibility, and your design tokens.
+      </Body>
+    </div>
+  </Animate>
+
+  <Animate variant="scaleUp" delay={.3}>
+    <div className="rounded-lg border border-almond bg-cream/50 p-6">
+      <Heading level={3} size={5} className="mb-3">
+        Animations
+      </Heading>
+      <Body as="div" variant="sm">
+        Fade, scale, spin, and shimmer effects. Trigger on mount, scroll, hover, or tap. Respects reduced motion preferences.
+      </Body>
+    </div>
+  </Animate>
+
+  <Animate variant="scaleUp" delay={.4}>
+    <div className="rounded-lg border border-almond bg-cream/50 p-6">
+      <Heading level={3} size={5} className="mb-3">
+        Theming
+      </Heading>
+      <Body as="div" variant="sm">
+        Colors, typography, and tokens live in global.css. Tailwind v4 powers the styling.
+      </Body>
+    </div>
+  </Animate>
+
+  <Animate variant="scaleUp" delay={.4}>
+    <div className="rounded-lg border border-almond bg-cream/50 p-6">
+      <Heading level={3} size={5} className="mb-3">
+        Storybook
+      </Heading>
+      <Body as="div" variant="sm">
+        Explore components, tweak props, and copy code. Use the sidebar to jump between stories.
+      </Body>
+    </div>
+  </Animate>
+</div>
+
+<Body as="div" variant="sm" className="mt-16 text-center">
+  Select a story from the sidebar to get started.
+</Body>
+
+</Unstyled>

@@ -1,0 +1,23 @@
+import type { StorybookConfig } from '@storybook/react-vite';
+import { withoutVitePlugins } from '@storybook/builder-vite';
+
+const config: StorybookConfig = {
+  stories: [
+    '../lib/Welcome/Welcome.mdx', // Default landing page – listed first
+    '../lib/Styleguide/Styleguide.mdx',
+    '../lib/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+  ],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-actions'],
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
+  },
+  core: {
+    builder: '@storybook/builder-vite',
+  },
+  viteFinal: async (config) => ({
+    ...config,
+    plugins: await withoutVitePlugins(config.plugins, ['vite:dts']), // skip dts plugin
+  }),
+};
+export default config;

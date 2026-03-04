@@ -1,0 +1,146 @@
+import { Meta, Unstyled, Story } from '@storybook/blocks';
+import { Heading } from '../Heading';
+import { Body } from '../Body';
+import { Button } from '../Button';
+import { Animate } from '../Animate';
+
+<Meta title="Strata/Style Guide" />
+
+<Unstyled>
+
+<Animate variant="fadeUp">
+  <Heading level={1} display className='mb-10 text-center'>Styleguide</Heading>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.1}>
+  <Heading level={2} size={6} className='mt-10 mb-6 border-b border-almond'>Headings</Heading>
+  <Heading level={1}>Heading One </Heading>
+  <Heading level={2}>Heading Two</Heading>
+  <Heading level={3}>Heading Three</Heading>
+  <Heading level={4}>Heading Four</Heading>
+  <Heading level={5}>Heading Five</Heading>
+  <Heading level={6}>Heading Six</Heading>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.2}>
+  <Heading level={2} size={6} className='mt-10 mb-6 border-b border-almond'>Body</Heading>
+  <Body variant="lg">The quick brown fox jumps over the lazy dog.</Body>
+  <Body variant="base">The quick brown fox jumps over the lazy dog.</Body>
+  <Body variant="sm">The quick brown fox jumps over the lazy dog.</Body>
+  <Body variant="caption">The quick brown fox jumps over the lazy dog.</Body>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.3}>
+  <Heading level={2} size={6} className='mt-10 mb-6 border-b border-almond'>Color Palette</Heading>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Primary</Heading>
+  <div className='flex flex-wrap gap-8 mb-4'>
+    {[
+      { name: 'Terracotta', value: '#89433D' },
+      { name: 'Rosewood', value: '#A4544E' },
+      { name: 'Clay', value: '#C1665E' },
+    ].map(({ name, value }) => (
+      <div key={name}>
+        <div className='size-24 rounded-lg shadow-md mb-2' style={{ backgroundColor: value }} />
+        <Body variant='sm'>{name}</Body>
+        <Body variant='caption' className='text-soil'>{value}</Body>
+      </div>
+    ))}
+  </div>
+  </Animate>
+
+<Animate variant="fadeIn" delay={0.4}>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Neutrals</Heading>
+  <div className='flex flex-wrap gap-8 mb-4'>
+    {[
+      { name: 'Alabaster', value: '#FFFAFA' },
+      { name: 'Cream', value: '#FFF9F2' },
+      { name: 'Almond', value: '#ECE3D6' },
+      { name: 'Sun', value: '#B59176' },
+      { name: 'Earth', value: '#5E4242' },
+      { name: 'Soil', value: '#403737' },
+      { name: 'Coal', value: '#211C1C' },
+    ].map(({ name, value }) => (
+      <div key={name}>
+        <div className='size-24 rounded-lg shadow-md mb-2' style={{ backgroundColor: value }} />
+        <Body variant='sm'>{name}</Body>
+        <Body variant='caption' className='text-soil'>{value}</Body>
+      </div>
+    ))}
+  </div>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.5}>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Accent</Heading>
+  <div className='flex flex-wrap gap-8 mb-4'>
+    {[
+      { name: 'Pine', value: '#3C493D' },
+      { name: 'Basil', value: '#556656' },
+      { name: 'Sage', value: '#738974' },
+    ].map(({ name, value }) => (
+      <div key={name}>
+        <div className='size-24 rounded-lg shadow-md mb-2' style={{ backgroundColor: value }} />
+        <Body variant='sm'>{name}</Body>
+        <Body variant='caption' className='text-soil'>{value}</Body>
+      </div>
+    ))}
+  </div>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.6}>
+  <Heading level={2} size={6} className='mt-10 mb-6 border-b border-almond'>Buttons</Heading>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Primary</Heading>
+  <div className='flex items-center gap-4 mb-4'>
+    <Button variant="primary" size="large">Primary</Button>
+    <Button variant="primary" size="medium">Primary</Button>
+    <Button variant="primary" size="small">Primary</Button>
+  </div>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.7}>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Secondary</Heading>
+  <div className='flex items-center gap-4 mb-4'>
+    <Button variant="secondary" size="large">Secondary</Button>
+    <Button variant="secondary" size="medium">Secondary</Button>
+    <Button variant="secondary" size="small">Secondary</Button>
+  </div>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.8}>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Success</Heading>
+  <div className='flex items-center gap-4 mb-4'>
+    <Button variant="success" size="large">Success</Button>
+    <Button variant="success" size="medium">Success</Button>
+    <Button variant="success" size="small">Success</Button>
+  </div>
+</Animate>
+
+<Animate variant="fadeIn" delay={0.9}>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Info</Heading>
+  <div className='flex items-center gap-4 mb-4'>
+    <Button variant="info" size="large">Info</Button>
+    <Button variant="info" size="medium">Info</Button>
+    <Button variant="info" size="small">Info</Button>
+  </div>
+</Animate>
+
+<Animate variant="fadeIn" delay={1}>
+  <Heading level={3} size={5} className='mt-10 mb-2'>Error</Heading>
+  <div className='flex items-center gap-4 mb-4'>
+    <Button variant="error" size="large">Error</Button>
+    <Button variant="error" size="medium">Error</Button>
+    <Button variant="error" size="small">Error</Button>
+  </div>
+</Animate>
+
+<Animate variant="fadeIn" delay={1.1}>
+  <Heading level={3} size={5} className='mt-10 mb-2'>With icons</Heading>
+  <div className='flex flex-wrap items-center gap-4 mb-4'>
+    <Button variant="primary" icon="add" iconPosition="start">Add item</Button>
+    <Button variant="secondary" icon="search">Search</Button>
+    <Button variant="success" icon="check" iconPosition="end">Save</Button>
+    <Button variant="primary" icon="add" aria-label="Add" />
+    <Button variant="secondary" icon="delete" aria-label="Delete" />
+  </div>
+</Animate>
+
+</Unstyled>

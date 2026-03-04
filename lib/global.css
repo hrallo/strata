@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+
+    /* Typography */
+  --font-display: "Petit Formal Script", cursive;
+  --font-body: "Figtree", sans-serif;
+  --font-heading: "Playfair", serif;
+  
+   
+  /* Colors */
+
+  /* Neutrals */
+--color-alabaster: #fefaf4;
+--color-cream: #FFF9F2;
+--color-almond: #ECE3D6;
+--color-sun: #B59176;
+--color-earth: #5E4242;
+--color-soil: #403737;
+--color-coal: #211C1C;
+
+/* Warm Accents */
+--color-terracotta: #89433D;
+--color-rosewood: #A4544E;
+--color-clay: #C1665E;
+--color-ember: #A70D00;
+
+/* Nature */
+--color-pine: #3C493D;
+--color-basil: #556656;
+--color-sage: #738974;
+
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
