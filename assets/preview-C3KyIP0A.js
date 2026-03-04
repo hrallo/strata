@@ -1,0 +1,1 @@
+import{R as e}from"./index-DwQS_Y10.js";const o={tags:["autodocs"],decorators:[(t,r)=>r.viewMode==="docs"?e.createElement("div",{className:"sb-unstyled"},e.createElement(t)):e.createElement(t)],parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},docs:{story:{inline:!0}}}};export{o as default};
