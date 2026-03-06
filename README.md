@@ -2,6 +2,8 @@
 
 A React component library with Tailwind CSS, designed with warmth and intention.
 
+**[View Storybook →](https://hrallo.github.io/strata/)**
+
 ## Components
 
 - **Animate** — Fade, scale, spin, and shimmer effects. Trigger on mount, scroll, hover, or tap. Respects reduced motion preferences.
